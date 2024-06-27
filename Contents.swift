@@ -75,3 +75,28 @@ print("Filtreleme 1")
 for o in f1 {
     print("no: \(o.no!) - Ad : \(o.ad!) - Sınıf : \(o.sinif!)")
 }
+
+//Sıralama - Sorting
+
+var s1 = OgrenciListesi.sorted(by: {$0.no! > $1.no!} )
+print("Sayısal Büyükten Küçüğe")
+
+for o in s1 {
+    print("no: \(o.no!) - Ad : \(o.ad!) - Sınıf : \(o.sinif!)")
+}
+
+var s2 = OgrenciListesi.sorted(by: {$0.ad! < $1.ad!} )
+print("Sayısal Büyükten Küçüğe")
+
+for o in s2 {
+    print("no: \(o.no!) - Ad : \(o.ad!) - Sınıf : \(o.sinif!)")
+}
+
+var s3 = OgrenciListesi.sorted(by: {$0.ad! > $1.ad!} )
+print("Sayısal Büyükten Küçüğe")
+
+for o in s3 {
+    print("no: \(o.no!) - Ad : \(o.ad!) - Sınıf : \(o.sinif!)")
+}
+
+
