@@ -100,3 +100,32 @@ for o in s3 {
 }
 
 
+//Dictionary - Hashmap - Map
+
+var iller = [Int:String]()
+
+//ADD Data
+
+iller [16] = "Bursa"
+iller [31] = "Hatay"
+
+print(iller)
+
+//Reading Data
+
+print(iller[16]!)
+
+//Uptade Data
+
+iller[16] = "Yeni Bursa"
+
+print(iller)
+
+for (anahtar,deger) in iller {
+    
+    print("\(anahtar) -> \(deger)")
+}
+
+iller.removeValue(forKey: 16)
+
+print(iller)
